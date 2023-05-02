@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+#logo {
+  font-size: 1.5rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 50px;
+  align-items: center;
+  background-color: lightblue;
+}
+
+header div {
+    color: blue;
+    display: flex;
+    flex-direction: row;
+  }
+  
+nav ul {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  text-align: center;
+  color: blue;
+}
+
+#btn_1 {
+  background-color: orangered;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#btn_2 {
+  background-color: grey;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#span {
+  color: orangered;
+  display: flex;
+  flex-direction: row;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 80px 50px 50px 50px ;
+    background-color: lightblue;
+}
+
+.hero_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+   
+}
+
+.hero_content h1 {
+    color: blue;
+    font-size: 2.7rem;
+}
+
+.hero_content p {
+    color: blue;
+    font-size: 1.1rem;
+}
+
+.about_us {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.about_us_content{
+    width: 30%;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about_us_image {
+    width: 30%;
+}       
+
+.solution {
+    margin-top: 50px;
+    background-color: lightblue;
+    padding: 10px;
+
+}
+
+.solutions {
+    padding-top: 30px;
+}
+
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 50px;
+    background-color: lightblue;
+}
+
+
+.projects button {
+    height: 100px;
+    width: 250px;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding:10px;
+}
+
+footer {
+    background-color: lightblue;
+}
+
+.footer_sec{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+@media (max-width:768px){
+    nav ul {
+        display: none;
+    }
+
+    .hero {
+        padding: 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero_content {
+        width: 100%;
+    }
+
+    .hero_image img{
+        width: 100%;
+    }
+
+    .about_us {
+        padding: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .about_us_content {
+        width: 100%;
+    }
+
+    .about_us_image{
+        padding: 20px;
+        width: 100%;
+    }
+
+    .projects{
+        grid-template-columns: 1fr;
+    }
+    
+    .footer_sec{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
